@@ -105,6 +105,8 @@ start_btn.onclick = () => {
   quiz_box.classList.add("activeQuiz"); //show quiz box
   showQuetions(0); //calling showQestions function
   queCounter(1);
+  var name = localStorage.getItem("name");
+  timeText.innerHTML = name.toUpperCase();
 };
 
 let timeValue = 15;

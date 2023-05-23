@@ -147,12 +147,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 145px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .quiz_box header .timer .time_left_txt {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 14px;
     user-select: none;
 }
 

@@ -42,14 +42,14 @@ function loginaccount() {
     if (users[i].email === email && users[i].password === password) {
       flage = true;
       alert("You  have successfully Login");
-      window.location.href = "./quiz.html";
       localStorage.setItem("name", users[i].name);
       localStorage.setItem("email", email);
       localStorage.setItem("password", password);
+      window.location.href = "./quiz.html";
     }
   }
   if (flage == false) {
-    alert("Please enter a valid email address and  password");
+    alert("Please enter a valid email and password");
   }
 }
 
@@ -66,5 +66,5 @@ function signUpA() {
   users.push(obj);
 
   localStorage.setItem("users", JSON.stringify(users));
-  window.location.href = "./index.html";
+container.classList.remove("active");
 }
